@@ -1,0 +1,57 @@
+{
+    "_id": "318c39450bc746ba8de08aa7e625a1d2",
+    "additional_data": {},
+    "exp_author": "default@author.com",
+    "exp_condition": "",
+    "exp_finished": false,
+    "exp_id": "develop",
+    "exp_session": "",
+    "exp_title": "default",
+    "exp_type": "web",
+    "exp_version": "1.0",
+    "save_time": 1584188934.550554,
+    "session_id": "318c39450bc746ba8de08aa7e625a1d2",
+    "start_time": 1584188932.571108,
+    "start_timestamp": "2020-03-14_t132852",
+    "subtree_data": [
+        {
+            "subtree_data": [
+                {
+                    "first_show_time": 1584188932.571836,
+                    "tag": "1",
+                    "uid": "welcome"
+                },
+                {
+                    "subtree_data": [
+                        {
+                            "tag": "1",
+                            "uid": "looped_0"
+                        },
+                        {
+                            "tag": "2",
+                            "uid": "looped_1"
+                        },
+                        {
+                            "tag": "3",
+                            "uid": "looped_2"
+                        },
+                        {
+                            "tag": "4",
+                            "uid": "looped_3"
+                        },
+                        {
+                            "tag": "5",
+                            "uid": "looped_4"
+                        }
+                    ],
+                    "tag": "2",
+                    "uid": "a70b09acc9464302ba4f9271147fc70c"
+                }
+            ],
+            "tag": "1",
+            "uid": "b1930f99093a4e3e87195635f009ca32"
+        }
+    ],
+    "tag": "rootSection",
+    "uid": "d3144ede26044cfc99e9a28ceab47c2e"
+}

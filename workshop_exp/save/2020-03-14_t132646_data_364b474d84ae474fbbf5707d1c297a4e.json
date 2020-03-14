@@ -1,0 +1,36 @@
+{
+    "_id": "364b474d84ae474fbbf5707d1c297a4e",
+    "additional_data": {},
+    "exp_author": "default@author.com",
+    "exp_condition": "",
+    "exp_finished": false,
+    "exp_id": "develop",
+    "exp_session": "",
+    "exp_title": "default",
+    "exp_type": "web",
+    "exp_version": "1.0",
+    "save_time": 1584188861.098785,
+    "session_id": "364b474d84ae474fbbf5707d1c297a4e",
+    "start_time": 1584188806.5438662,
+    "start_timestamp": "2020-03-14_t132646",
+    "subtree_data": [
+        {
+            "subtree_data": [
+                {
+                    "first_show_time": 1584188806.544364,
+                    "tag": "1",
+                    "uid": "welcome_page",
+                    "welcome_text": "test"
+                },
+                {
+                    "tag": "2",
+                    "uid": "dynamic_page"
+                }
+            ],
+            "tag": "1",
+            "uid": "d5cb369d410c4ebbb97cc40751be6af5"
+        }
+    ],
+    "tag": "rootSection",
+    "uid": "42dd1cfc36264557848b9803526459d5"
+}

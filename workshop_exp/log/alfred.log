@@ -1,0 +1,373 @@
+2020-03-14 13:06:59,692 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:07:00,086 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 42, in start
+    exp = script.generate_experiment(config=None)
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 10, in generate_experiment
+    exp = Experiment(config=config)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/__init__.py", line 75, in __init__
+    if exp_type or exp_name or exp_version:
+NameError: name 'exp_type' is not defined
+2020-03-14 13:08:36,490 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:08:36,815 - alfred - INFO - experiment id=develop, session id=d15611 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:08:36,838 - alfred.saving_agent - INFO - experiment id=develop, session id=d15611 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:08:36,839 - alfred.saving_agent - INFO - experiment id=develop, session id=d15611 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t130836_data_d156111bf96c42b6aba5340f6cc31cac.json]> added to experiment
+2020-03-14 13:08:36,839 - alfred - INFO - experiment id=develop, session id=d15611 - Experiment.start() called. Session is starting.
+2020-03-14 13:08:36,839 - alfred.section - DEBUG - experiment id=develop, session id=d15611 - Entering Section rootSection
+2020-03-14 13:08:36,840 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 44, in start
+    script.experiment.start()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/__init__.py", line 162, in start
+    self._user_interface_controller.start()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/ui_controller.py", line 104, in start
+    self._experiment.page_controller.enter()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/section.py", line 91, in enter
+    if isinstance(self._core_page_at_index, Section):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/section.py", line 296, in _core_page_at_index
+    return self._page_list[self._currentPageIndex]
+IndexError: list index out of range
+2020-03-14 13:10:28,051 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:10:28,346 - alfred - INFO - experiment id=develop, session id=8f8126 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:10:28,372 - alfred.saving_agent - INFO - experiment id=develop, session id=8f8126 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:10:28,372 - alfred.saving_agent - INFO - experiment id=develop, session id=8f8126 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t131028_data_8f812671d5bc49edaf8522471a0520fb.json]> added to experiment
+2020-03-14 13:10:28,372 - alfred - INFO - experiment id=develop, session id=8f8126 - Experiment.start() called. Session is starting.
+2020-03-14 13:10:28,372 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - Entering Section rootSection
+2020-03-14 13:10:28,372 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - Entering Section 1
+2020-03-14 13:10:30,898 - alfred - INFO - experiment id=develop, session id=8f8126 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:10:30,898 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - Leaving Section 1 in direction forward
+2020-03-14 13:10:30,898 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - Leaving Section rootSection in direction forward
+2020-03-14 13:10:30,898 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - Entering Section finishedSection
+2020-03-14 13:10:30,898 - alfred.section - DEBUG - experiment id=develop, session id=8f8126 - QG finishedSection: move to first
+2020-03-14 13:11:01,968 - alfred.saving_agent - ERROR - experiment id=develop, session id=8f8126 - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:11:01,969 - alfred.saving_agent - INFO - experiment id=develop, session id=8f8126 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t131028_data_8f812671d5bc49edaf8522471a0520fb.json]> succeeded
+2020-03-14 13:11:01,970 - alfred.saving_agent - INFO - experiment id=develop, session id=8f8126 - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t131028_failure_save_8f812671d5bc49edaf8522471a0520fb.json]> succeeded
+2020-03-14 13:19:43,121 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:19:43,497 - alfred - INFO - experiment id=develop, session id=f9cf96 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:19:43,520 - alfred.saving_agent - INFO - experiment id=develop, session id=f9cf96 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:19:43,525 - alfred.saving_agent - INFO - experiment id=develop, session id=f9cf96 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t131943_data_f9cf961133234f7b977e1b2e5562c564.json]> added to experiment
+2020-03-14 13:19:43,525 - alfred - INFO - experiment id=develop, session id=f9cf96 - Experiment.start() called. Session is starting.
+2020-03-14 13:19:43,525 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - Entering Section rootSection
+2020-03-14 13:19:43,525 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - Entering Section 1
+2020-03-14 13:19:45,541 - alfred - INFO - experiment id=develop, session id=f9cf96 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:19:45,541 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - Leaving Section 1 in direction forward
+2020-03-14 13:19:45,541 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - Leaving Section rootSection in direction forward
+2020-03-14 13:19:45,541 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - Entering Section finishedSection
+2020-03-14 13:19:45,541 - alfred.section - DEBUG - experiment id=develop, session id=f9cf96 - QG finishedSection: move to first
+2020-03-14 13:20:15,599 - alfred.saving_agent - ERROR - experiment id=develop, session id=f9cf96 - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:20:15,600 - alfred.saving_agent - INFO - experiment id=develop, session id=f9cf96 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t131943_data_f9cf961133234f7b977e1b2e5562c564.json]> succeeded
+2020-03-14 13:20:15,603 - alfred.saving_agent - INFO - experiment id=develop, session id=f9cf96 - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t131943_failure_save_f9cf961133234f7b977e1b2e5562c564.json]> succeeded
+2020-03-14 13:24:17,346 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:24:17,646 - alfred - INFO - experiment id=develop, session id=2c0691 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:24:17,669 - alfred.saving_agent - INFO - experiment id=develop, session id=2c0691 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:24:17,670 - alfred.saving_agent - INFO - experiment id=develop, session id=2c0691 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132417_data_2c06916cc5fc4414a095bd5e42929464.json]> added to experiment
+2020-03-14 13:24:17,670 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 42, in start
+    exp = script.generate_experiment(config=None)
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 21, in generate_experiment
+    page_01.append(text01)
+NameError: name 'text01' is not defined
+2020-03-14 13:24:45,399 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:24:45,719 - alfred - INFO - experiment id=develop, session id=f10241 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:24:45,737 - alfred.saving_agent - INFO - experiment id=develop, session id=f10241 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:24:45,737 - alfred.saving_agent - INFO - experiment id=develop, session id=f10241 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132445_data_f10241ab627a466db5201f9e3df65b47.json]> added to experiment
+2020-03-14 13:24:45,737 - alfred - INFO - experiment id=develop, session id=f10241 - Experiment.start() called. Session is starting.
+2020-03-14 13:24:45,738 - alfred.section - DEBUG - experiment id=develop, session id=f10241 - Entering Section rootSection
+2020-03-14 13:24:45,738 - alfred.section - DEBUG - experiment id=develop, session id=f10241 - Entering Section 1
+2020-03-14 13:24:47,903 - alfred.helpmates.localserver - ERROR - Exception on /experiment [POST]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 84, in experiment
+    script.experiment.user_interface_controller.move_forward()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/ui_controller.py", line 87, in move_forward
+    self._experiment.page_controller.current_page._on_showing_widget()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/page.py", line 97, in _on_showing_widget
+    self.on_showing_widget()
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 11, in on_showing_widget
+    text = self._experiment.data_manager.find_experiment_data_by_uid('welcome_page')['welcome_text']
+KeyError: 'welcome_text'
+2020-03-14 13:25:10,988 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:25:11,269 - alfred - INFO - experiment id=develop, session id=7ab2e4 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:25:11,293 - alfred.saving_agent - INFO - experiment id=develop, session id=7ab2e4 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:25:11,293 - alfred.saving_agent - INFO - experiment id=develop, session id=7ab2e4 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132511_data_7ab2e44dd9ae4613890cc71177d7235f.json]> added to experiment
+2020-03-14 13:25:11,301 - alfred - INFO - experiment id=develop, session id=7ab2e4 - Experiment.start() called. Session is starting.
+2020-03-14 13:25:11,301 - alfred.section - DEBUG - experiment id=develop, session id=7ab2e4 - Entering Section rootSection
+2020-03-14 13:25:11,302 - alfred.section - DEBUG - experiment id=develop, session id=7ab2e4 - Entering Section 1
+2020-03-14 13:25:13,860 - alfred.helpmates.localserver - ERROR - Exception on /experiment [POST]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 84, in experiment
+    script.experiment.user_interface_controller.move_forward()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/ui_controller.py", line 87, in move_forward
+    self._experiment.page_controller.current_page._on_showing_widget()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/page.py", line 97, in _on_showing_widget
+    self.on_showing_widget()
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 12, in on_showing_widget
+    text_element = elm.TextElement(name='dynamic_page_text')
+TypeError: __init__() missing 1 required positional argument: 'text'
+2020-03-14 13:25:35,704 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:25:35,987 - alfred - INFO - experiment id=develop, session id=c21e12 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:25:36,011 - alfred.saving_agent - INFO - experiment id=develop, session id=c21e12 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:25:36,011 - alfred.saving_agent - INFO - experiment id=develop, session id=c21e12 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132536_data_c21e12c2d75146c39066c12c612839d6.json]> added to experiment
+2020-03-14 13:25:36,019 - alfred - INFO - experiment id=develop, session id=c21e12 - Experiment.start() called. Session is starting.
+2020-03-14 13:25:36,019 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - Entering Section rootSection
+2020-03-14 13:25:36,019 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - Entering Section 1
+2020-03-14 13:25:40,588 - alfred - INFO - experiment id=develop, session id=c21e12 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:25:40,589 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - Leaving Section 1 in direction forward
+2020-03-14 13:25:40,589 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - Leaving Section rootSection in direction forward
+2020-03-14 13:25:40,589 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - Entering Section finishedSection
+2020-03-14 13:25:40,589 - alfred.section - DEBUG - experiment id=develop, session id=c21e12 - QG finishedSection: move to first
+2020-03-14 13:26:09,603 - alfred.saving_agent - ERROR - experiment id=develop, session id=c21e12 - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:26:09,606 - alfred.saving_agent - DEBUG - experiment id=develop, session id=c21e12 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132536_data_c21e12c2d75146c39066c12c612839d6.json]> succeeded
+2020-03-14 13:26:09,607 - alfred.saving_agent - INFO - experiment id=develop, session id=c21e12 - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t132536_failure_save_c21e12c2d75146c39066c12c612839d6.json]> succeeded
+2020-03-14 13:26:34,398 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:26:34,629 - alfred - INFO - experiment id=develop, session id=a94006 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:26:34,652 - alfred.saving_agent - INFO - experiment id=develop, session id=a94006 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:26:34,652 - alfred.saving_agent - INFO - experiment id=develop, session id=a94006 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132634_data_a940063e0b0b469f8bda778e42eb99f3.json]> added to experiment
+2020-03-14 13:26:34,652 - alfred - INFO - experiment id=develop, session id=a94006 - Experiment.start() called. Session is starting.
+2020-03-14 13:26:34,652 - alfred.section - DEBUG - experiment id=develop, session id=a94006 - Entering Section rootSection
+2020-03-14 13:26:34,653 - alfred.section - DEBUG - experiment id=develop, session id=a94006 - Entering Section 1
+2020-03-14 13:26:37,430 - alfred.helpmates.localserver - ERROR - Exception on /experiment [POST]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 84, in experiment
+    script.experiment.user_interface_controller.move_forward()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/ui_controller.py", line 87, in move_forward
+    self._experiment.page_controller.current_page._on_showing_widget()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/page.py", line 98, in _on_showing_widget
+    self.on_showing()
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 17, in on_showing
+    text_element = TextElement(text)
+NameError: name 'TextElement' is not defined
+2020-03-14 13:26:46,287 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:26:46,520 - alfred - INFO - experiment id=develop, session id=364b47 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:26:46,543 - alfred.saving_agent - INFO - experiment id=develop, session id=364b47 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:26:46,543 - alfred.saving_agent - INFO - experiment id=develop, session id=364b47 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132646_data_364b474d84ae474fbbf5707d1c297a4e.json]> added to experiment
+2020-03-14 13:26:46,543 - alfred - INFO - experiment id=develop, session id=364b47 - Experiment.start() called. Session is starting.
+2020-03-14 13:26:46,543 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - Entering Section rootSection
+2020-03-14 13:26:46,544 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - Entering Section 1
+2020-03-14 13:27:43,055 - alfred - INFO - experiment id=develop, session id=364b47 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:27:43,055 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - Leaving Section 1 in direction forward
+2020-03-14 13:27:43,055 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - Leaving Section rootSection in direction forward
+2020-03-14 13:27:43,055 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - Entering Section finishedSection
+2020-03-14 13:27:43,055 - alfred.section - DEBUG - experiment id=develop, session id=364b47 - QG finishedSection: move to first
+2020-03-14 13:28:12,206 - alfred.saving_agent - ERROR - experiment id=develop, session id=364b47 - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:28:12,209 - alfred.saving_agent - DEBUG - experiment id=develop, session id=364b47 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132646_data_364b474d84ae474fbbf5707d1c297a4e.json]> succeeded
+2020-03-14 13:28:12,210 - alfred.saving_agent - INFO - experiment id=develop, session id=364b47 - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t132646_failure_save_364b474d84ae474fbbf5707d1c297a4e.json]> succeeded
+2020-03-14 13:28:17,029 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:28:17,312 - alfred - INFO - experiment id=develop, session id=903778 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:28:17,333 - alfred.saving_agent - INFO - experiment id=develop, session id=903778 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:28:17,333 - alfred.saving_agent - INFO - experiment id=develop, session id=903778 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132817_data_903778e81d094a539d14a8efb0a1dba4.json]> added to experiment
+2020-03-14 13:28:17,334 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 42, in start
+    exp = script.generate_experiment(config=None)
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 30, in generate_experiment
+    page = LoopPage(title='Loop Page {n}'.fornat(n=i), uid='looped_{n}'.format(n=i))
+AttributeError: 'str' object has no attribute 'fornat'
+2020-03-14 13:28:34,335 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:28:34,584 - alfred - INFO - experiment id=develop, session id=1bfc2d - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:28:34,605 - alfred.saving_agent - INFO - experiment id=develop, session id=1bfc2d - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:28:34,605 - alfred.saving_agent - INFO - experiment id=develop, session id=1bfc2d - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132834_data_1bfc2d9eee7a42e1bb27ae5007c2693e.json]> added to experiment
+2020-03-14 13:28:34,606 - alfred - INFO - experiment id=develop, session id=1bfc2d - Experiment.start() called. Session is starting.
+2020-03-14 13:28:34,606 - alfred.section - DEBUG - experiment id=develop, session id=1bfc2d - Entering Section rootSection
+2020-03-14 13:28:34,606 - alfred.section - DEBUG - experiment id=develop, session id=1bfc2d - Entering Section 1
+2020-03-14 13:28:34,607 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 44, in start
+    script.experiment.start()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/__init__.py", line 162, in start
+    self._user_interface_controller.start()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/ui_controller.py", line 105, in start
+    self._experiment.page_controller.current_page._on_showing_widget()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/page.py", line 98, in _on_showing_widget
+    self.on_showing()
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 11, in on_showing
+    text = elm.TextElement(self.values.welcome_text)
+KeyError: 'welcome_text'
+2020-03-14 13:28:52,267 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:28:52,545 - alfred - INFO - experiment id=develop, session id=318c39 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:28:52,570 - alfred.saving_agent - INFO - experiment id=develop, session id=318c39 - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:28:52,570 - alfred.saving_agent - INFO - experiment id=develop, session id=318c39 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132852_data_318c39450bc746ba8de08aa7e625a1d2.json]> added to experiment
+2020-03-14 13:28:52,571 - alfred - INFO - experiment id=develop, session id=318c39 - Experiment.start() called. Session is starting.
+2020-03-14 13:28:52,571 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Entering Section rootSection
+2020-03-14 13:28:52,571 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Entering Section 1
+2020-03-14 13:28:54,550 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Entering Section 2
+2020-03-14 13:29:00,875 - alfred - INFO - experiment id=develop, session id=318c39 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Leaving HeadOpenSection direction forward. closing last page.
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Leaving Section 2 in direction forward
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Leaving Section 1 in direction forward
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Leaving Section rootSection in direction forward
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - Entering Section finishedSection
+2020-03-14 13:29:00,875 - alfred.section - DEBUG - experiment id=develop, session id=318c39 - QG finishedSection: move to first
+2020-03-14 13:29:25,138 - alfred.saving_agent - ERROR - experiment id=develop, session id=318c39 - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:29:25,141 - alfred.saving_agent - DEBUG - experiment id=develop, session id=318c39 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132852_data_318c39450bc746ba8de08aa7e625a1d2.json]> succeeded
+2020-03-14 13:29:25,142 - alfred.saving_agent - INFO - experiment id=develop, session id=318c39 - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t132852_failure_save_318c39450bc746ba8de08aa7e625a1d2.json]> succeeded
+2020-03-14 13:29:33,809 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:29:34,101 - alfred - INFO - experiment id=develop, session id=ff2e5c - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:29:34,122 - alfred.saving_agent - INFO - experiment id=develop, session id=ff2e5c - Continuous SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> added to experiment
+2020-03-14 13:29:34,122 - alfred.saving_agent - INFO - experiment id=develop, session id=ff2e5c - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132934_data_ff2e5c75bacf4b2383cefe7c68fe5742.json]> added to experiment
+2020-03-14 13:29:34,122 - alfred - INFO - experiment id=develop, session id=ff2e5c - Experiment.start() called. Session is starting.
+2020-03-14 13:29:34,123 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - Entering Section rootSection
+2020-03-14 13:29:34,123 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - Entering Section 1
+2020-03-14 13:29:35,871 - alfred - INFO - experiment id=develop, session id=ff2e5c - Experiment.finish() called. Session is finishing.
+2020-03-14 13:29:35,871 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - Leaving Section 1 in direction forward
+2020-03-14 13:29:35,872 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - Leaving Section rootSection in direction forward
+2020-03-14 13:29:35,872 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - Entering Section finishedSection
+2020-03-14 13:29:35,872 - alfred.section - DEBUG - experiment id=develop, session id=ff2e5c - QG finishedSection: move to first
+2020-03-14 13:30:06,696 - alfred.saving_agent - ERROR - experiment id=develop, session id=ff2e5c - Running SavingAgent <MongoSavingAgent [host: Database(MongoClient(host=['134.76.19.150:49130'], document_class=dict, tz_aware=False, connect=True), 'host'), database: alfred.local]> failed with error 'Error while saving: 134.76.19.150:49130: timed out'
+2020-03-14 13:30:06,697 - alfred.saving_agent - INFO - experiment id=develop, session id=ff2e5c - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t132934_data_ff2e5c75bacf4b2383cefe7c68fe5742.json]> succeeded
+2020-03-14 13:30:06,698 - alfred.saving_agent - INFO - experiment id=develop, session id=ff2e5c - Running Backup SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/2020-03-14_t132934_failure_save_ff2e5c75bacf4b2383cefe7c68fe5742.json]> succeeded
+2020-03-14 13:31:24,433 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:31:24,848 - alfred - INFO - experiment id=develop, session id=c58821 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:31:24,875 - alfred.saving_agent - INFO - experiment id=develop, session id=c58821 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t133124_data_c58821d320ec4d80998ea33373ba3747.json]> added to experiment
+2020-03-14 13:31:24,900 - alfred.helpmates - WARNING - parse_xml_to_dict: There is a file files/instructions.xml, but there is also a file /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml in the external files directory. Previous versions of Alfred would have used /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml by default, now files/instructions.xml is used. Please make sure that you are importing the correct file.
+2020-03-14 13:31:24,902 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 42, in start
+    exp = script.generate_experiment(config=None)
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 24, in generate_experiment
+    page_01.values.instr_text = instr['consent']
+KeyError: 'consent'
+2020-03-14 13:31:34,618 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:31:34,848 - alfred - INFO - experiment id=develop, session id=307949 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:31:34,873 - alfred.saving_agent - INFO - experiment id=develop, session id=307949 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t133134_data_307949d7440240a2ae86337feec918aa.json]> added to experiment
+2020-03-14 13:31:34,883 - alfred.helpmates - WARNING - parse_xml_to_dict: There is a file files/instructions.xml, but there is also a file /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml in the external files directory. Previous versions of Alfred would have used /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml by default, now files/instructions.xml is used. Please make sure that you are importing the correct file.
+2020-03-14 13:31:34,884 - alfred.helpmates.localserver - ERROR - Exception on /start [GET]
+Traceback (most recent call last):
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jobrachem/.virtualenvs/alfred_pip/lib/python3.7/site-packages/alfred-0.3b1-py3.7.egg/alfred/helpmates/localserver.py", line 42, in start
+    exp = script.generate_experiment(config=None)
+  File "/Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/script.py", line 24, in generate_experiment
+    page_01.values.consent = instr['consent']
+KeyError: 'consent'
+2020-03-14 13:31:59,863 - alfred.alfredlog - INFO - Alfred framework web startup! Logging system initialized.
+2020-03-14 13:32:00,113 - alfred - INFO - experiment id=develop, session id=a935f6 - Alfred web experiment session initialized! Alfred version: 0.3b1, experiment name: default, experiment version: 1.0
+2020-03-14 13:32:00,133 - alfred.saving_agent - INFO - experiment id=develop, session id=a935f6 - Continuous SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t133200_data_a935f6c05b6b47278ba1795aac16ab63.json]> added to experiment
+2020-03-14 13:32:00,133 - alfred.helpmates - WARNING - parse_xml_to_dict: There is a file files/instructions.xml, but there is also a file /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml in the external files directory. Previous versions of Alfred would have used /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/files/instructions.xml by default, now files/instructions.xml is used. Please make sure that you are importing the correct file.
+2020-03-14 13:32:00,134 - alfred - INFO - experiment id=develop, session id=a935f6 - Experiment.start() called. Session is starting.
+2020-03-14 13:32:00,134 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - Entering Section rootSection
+2020-03-14 13:32:00,134 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - Entering Section 1
+2020-03-14 13:32:02,219 - alfred - INFO - experiment id=develop, session id=a935f6 - Experiment.finish() called. Session is finishing.
+2020-03-14 13:32:02,219 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - Leaving Section 1 in direction forward
+2020-03-14 13:32:02,219 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - Leaving Section rootSection in direction forward
+2020-03-14 13:32:02,220 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - Entering Section finishedSection
+2020-03-14 13:32:02,220 - alfred.section - DEBUG - experiment id=develop, session id=a935f6 - QG finishedSection: move to first
+2020-03-14 13:32:02,396 - alfred.saving_agent - INFO - experiment id=develop, session id=a935f6 - Running SavingAgent <LocalSavingAgent [path: /Users/jobrachem/ownCloud/_Arbeit/ECOSOP/2020-03-16 Alfred v1.0 Workshop/workshop_exp/save/2020-03-14_t133200_data_a935f6c05b6b47278ba1795aac16ab63.json]> succeeded
