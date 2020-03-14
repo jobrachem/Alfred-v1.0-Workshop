@@ -1,3 +1,6 @@
 log/
 workshop_exp/log/
 .idea/
+*.DS_Store
+.DS_Store
+~$alfred-whatsnew-v1.0.pptx
