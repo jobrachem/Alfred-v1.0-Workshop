@@ -4,3 +4,5 @@ workshop_exp/log/
 *.DS_Store
 .DS_Store
 ~$alfred-whatsnew-v1.0.pptx
+workshop_exp/__pychache__/
+workshop_exp/save/

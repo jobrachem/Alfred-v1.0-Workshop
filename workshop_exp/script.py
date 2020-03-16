@@ -10,7 +10,10 @@ import alfred.section as sec
 class Welcome(Page):
     def on_showing(self):
         consent = elm.TextElement(self.values.consent)
-        self.append(consent)
+        for i in ['1', '2', '3']:
+            image = elm.ImageElement(path="files/Bild{i}.png".format(i=i))
+            self.append(image)
+        self.append(consent, image)
 
 # experiment generation
 def generate_experiment(self, config=None):
